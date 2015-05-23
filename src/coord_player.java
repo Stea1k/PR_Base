@@ -1,5 +1,5 @@
 
-public class PD_Player {
+public class coord_player {
 	//name
 	//player num
 	//action
@@ -33,7 +33,7 @@ public class PD_Player {
 	protected void setScore(int i){
 		this.score = i;
 	}
-	public PD_Player(String n,int i){
+	public coord_player(String n,int i){
 		setName(n);
 		setPlayerNum(i);
 		setScore(0);
