@@ -38,4 +38,5 @@ public class coord_strategy {
 		setStratValues(values);
 		setIntendedGameSize();
 	}
+	//TODO: add cooperation and defection strategies. Do this in a separate class file.
 }
