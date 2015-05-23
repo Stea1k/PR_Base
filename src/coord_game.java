@@ -32,10 +32,27 @@ public class coord_game {
 	protected void setGameType(String g){
 		this.gameType = g;
 	}
+	protected void setPlayers(){
+		this.players = new LinkedList<coord_player>();
+	}
+	protected void setGameStratList(){
+		this.gameStratList = new LinkedList<coord_strategy>();
+	}
+	
+	//TODO: These probably belong within the coordination main file.
+	//<>
 	public void addPlayerToPlayers(coord_player p){
 		this.players.add(p);
 	}
 	public void addStratToStratList(coord_strategy s){
 		this.gameStratList.add(s);
+	}
+	//<>
+	
+	public coord_game(String Name, String Type){
+		setGameName(Name);
+		setGameType(Type);
+		setPlayers();
+		setGameStratList();
 	}
 }
